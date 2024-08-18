@@ -17,9 +17,9 @@
     </section>
     <section class="flex flex-col lg:flex-row gap-10 lg:gap-14">
         <aside>
-            <img class="w-[430px] h-[519px] mt-4 lg:mt-0" src="images/money-master.png" alt="">
+            <img class="w-[430px] h-[519px] mt-4 lg:mt-0 rounded-lg" src="images/money-master.png" alt="">
         </aside>
-        <aside class="bg-[#e2e2e2] w-[350px] lg:w-[400px] lg:h-[520px] px-4 lg:px-12 py-8  lg:pt-3 lg:pb-5">
+        <aside class="bg-[#e2e2e2] w-[350px] lg:w-[400px] lg:h-[520px] px-4 lg:px-12 py-8  lg:pt-3 lg:pb-5 rounded-lg">
             <h3 class="text-center text-lg font-semibold">Income</h3>
             <p class="text-right mt-2 font-medium">Income : &nbsp;&nbsp;&nbsp;<input class="px-2 py-1 rounded" type="text" name="" id="income-amount" placeholder="Enter your income amount"></p>
             <h3 class="text-center text-lg font-semibold mt-3">Expenses</h3>
@@ -27,13 +27,13 @@
             <p class="text-right mt-4 font-medium">Rent :  &nbsp;&nbsp;&nbsp;<input class="px-2 py-1 rounded" type="text" name="" id="rent-expenses-amount" placeholder="Rent expenses amount"></p>
             <p class="text-right mt-4 font-medium">Clothes :  &nbsp;&nbsp;&nbsp;<input class="px-2 py-1 rounded" type="text" name="" id="cloth-expenses-amount" placeholder="Clothing expenses amount"></p>
             <div class="flex justify-center my-4">
-                <button onclick="calculateTotalExpenses()" class="bg-[#59A5FF] font-medium px-8 py-1 text-white rounded hover:opacity-70">Calculate</button>
+                <button onclick="calculateTotalExpenses()" class="bg-[#59A5FF] font-medium px-8 py-1 text-white rounded  active:bg-blue-300">Calculate</button>
             </div>
             <h3 class="text-center text-lg font-semibold">Total Expenses : <span id="total-expenses">00</span></h3>
             <h3 class="text-center text-lg font-semibold mt-3">Balance : <span id="balance-show">00</span></h3>
             <div class="flex gap-1 justify-center mt-4">
                 <p class="text-right font-medium">Save : &nbsp;&nbsp;&nbsp;<input class="px-2 py-1 rounded w-28" type="text" name="" id="save-amount" placeholder="Save amount">&nbsp;&nbsp; <span> % </span>&nbsp;&nbsp;</p>
-                <button onclick="calculateSavings()" class="bg-[#59A5FF] font-medium px-4 text-white rounded hover:opacity-70">Save</button>
+                <button onclick="calculateSavings()" class="bg-[#59A5FF] font-medium px-4 text-white rounded  active:bg-blue-300">Save</button>
             </div>
             <p class="text-center text-lg font-semibold mt-4">Saving Amount : <span id="saving-amount">00</span></p>
         </aside>
